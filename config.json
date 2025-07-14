@@ -1,0 +1,14 @@
+{
+  "name": "WireGuard Client",
+  "version": "1.0",
+  "slug": "wireguard_client",
+  "description": "WireGuard VPN Client for Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "privileged": ["NET_ADMIN", "SYS_MODULE"],
+  "devices": ["/dev/net/tun"],
+  "options": {},
+  "schema": {},
+  "arch": ["aarch64", "amd64", "armv7"]
+}
